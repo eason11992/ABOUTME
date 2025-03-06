@@ -12,28 +12,31 @@
 <script>
 		function change1() {
   			document.getElementById("pic").src = "mountain.jpg";
-  			document.getElementById("h2text").innerText = "靜宜資管";
+  			document.getElementById("h1text").innerText = "靜宜資管";
+  			document.getElementById("h2text").innerText = "資管導論";
 		}
 
 		function change2() {
   			document.getElementById("pic").src = "cliff.jpg";
-  			document.getElementById("h2text").innerText = "Tzyy-Ching Yang";
+  			document.getElementById("h1text").innerText = "陳奕廷";
+  			document.getElementById("h2text").innerText = "Chen,Yi Ting";
 		}
 	</script>
 </head>
 <body>
-	<table width="70%">
+	<?php echo date("Y-m-d") ?>
+	<table width=600>
 		<tr>
 			<td>
-				<img src="KING IS COME IN.jpg"></img>
+				<img src="cliff.jpg"id="pic" onmouseover="change1()" onmouseout="change2()"></img>
 			</td>
 			<td>
-				<h1>陳奕廷</h1>
-				<h2>Chen-Yi Ting</h2>	
+				<h1 id="h1text">陳奕廷</h1>
+				<h2 id="h2text">Chen-Yi Ting</h2>	
 			</td>
 		</tr>
 	</table>
-<table width="70%"border="1">
+<table width="60%"border="1">
 		<tr>
 			<td>
 				大象席地而坐電影配樂<br>
@@ -52,7 +55,7 @@
 			</td>	
 		</tr>
 	</table>
-	<table width="70%" border="1">
+	<table width="60%" border="1">
 		<tr>
 			<td>
 	<iframe src="https://console.dialogflow.com/api-client/demo/embedded/ee2340f9-75a3-4b1b-b998-4251c027955c">
